@@ -1,0 +1,2 @@
+The Code is functional and very readable even to a novice.
+My only recommandation would be a function to dynamically render the div and items on the page.
