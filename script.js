@@ -39,6 +39,10 @@ function resetBoard() {
 }
 
 (function shuffle() {
+	var numberOfCards = prompt("Please enter a number between 4 and 12. Otherwise the game will display 4 cards");
+		numberOfCards = numberOfCards >= 4 && numberOfCards <= 12 ? numberOfCards : 4;   
+		for (var i = 0; i < cards.length - numberOfCards; i++)
+			cards[i].style.display = "none";
 	cards.forEach(card => {
 		card.style.order = Math.floor(Math.random() * 12);
 	});
